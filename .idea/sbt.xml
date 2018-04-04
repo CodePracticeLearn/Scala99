@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ScalaSbtSettings">
+    <option name="customVMEnabled" value="true" />
+    <option name="customVMPath" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_162.jdk/Contents/Home/jre/bin" />
+    <option name="maximumHeapSize" value="4048" />
+    <option name="vmParameters" value="-Xms128m -Xmx8192m -XX:ReservedCodeCacheSize=240m -XX:+UseCompressedOops -Dhttp.proxyHost=proxy.wdf.sap.corp -Dhttp.proxyPort=8080 -Dhttps.proxyHost=proxy.wdf.sap.corp -Dhttps.proxyPort=8080 -Dhttp.nonProxyHosts=&quot;192.168.174.148|*.sap.corp|10.*|localhost|127.0.0.1|0.0.0.0|github.wdf.sap.corp|nexus.wdf.sap.corp:8443|nexus.wdf.sap.corp:8081|*.sap.corp&quot;" />
+  </component>
+</project>
