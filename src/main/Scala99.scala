@@ -113,4 +113,18 @@ object Scala99 {
 
   println("packed"+pack(List(1,1,1,2,3,1,1)))
 
+
+  //encode(List('a, 'a, 'a, 'a, 'b, 'c, 'c, 'a, 'a, 'd, 'e, 'e, 'e, 'e))
+  //res0: List[(Int, Symbol)] = List((4,'a), (1,'b), (2,'c), (2,'a), (1,'d), (4,'e))
+
+  def encode[T](ls:List[T]):List[(Int,Option[T])] = {
+    ls match{
+      case Nil => List()
+      case x => pack(x).map{elemList => (elemList.size, elemList.headOption)} // remove headOption here and get the ususal result
+    }
+
+  }
+
+  println("encoded"+encode(List('a, 'a, 'a, 'a, 'b, 'c, 'c, 'a, 'a, 'd, 'e, 'e, 'e, 'e)))
+
 }
