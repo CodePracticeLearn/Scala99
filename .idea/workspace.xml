@@ -17,8 +17,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/Scala99.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="292">
-              <caret line="94" lean-forward="true" selection-start-line="94" selection-end-line="94" />
+            <state relative-caret-position="235">
+              <caret line="112" lean-forward="true" selection-start-line="112" selection-end-line="112" />
             </state>
           </provider>
         </entry>
@@ -144,7 +144,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547720489376" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547722339960" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="vcs.Subversion.Network" />
   </component>
@@ -314,8 +314,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/Scala99.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="292">
-          <caret line="94" lean-forward="true" selection-start-line="94" selection-end-line="94" />
+        <state relative-caret-position="235">
+          <caret line="112" lean-forward="true" selection-start-line="112" selection-end-line="112" />
         </state>
       </provider>
     </entry>

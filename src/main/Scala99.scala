@@ -96,4 +96,21 @@ object Scala99 {
     "compressed" + compress(
       List('a, 'a, 'a, 'a, 'b, 'c, 'c, 'a, 'a, 'd, 'e, 'e, 'e, 'e)))
 
+  //p09 pack(List('a, 'a, 'a, 'a, 'b, 'c, 'c, 'a, 'a, 'd, 'e, 'e, 'e, 'e))
+  //res0: List[List[Symbol]] = List(List('a, 'a, 'a, 'a), List('b), List('c, 'c), List('a, 'a), List('d), List('e, 'e, 'e, 'e))
+
+  def pack[T](list: List[T]): List[List[T]] = {
+
+    def packInner(acc: List[T], l: List[T]): List[List[T]] = l match {
+      case head :: tail if acc.isEmpty => packInner(List(head), tail)
+      case head :: tail if head == acc.head => packInner(head :: acc, tail)
+      case head :: tail if head != acc.head => acc :: packInner(List(head), tail)
+      case Nil => List(acc)
+    }
+
+    packInner(List(), list)
+  }
+
+  println("packed"+pack(List(1,1,1,2,3,1,1)))
+
 }
