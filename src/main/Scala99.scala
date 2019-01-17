@@ -76,10 +76,24 @@ object Scala99 {
     }
   }
 
-  println("flattened"+flatten(List(List(1, 1), 2, List(3, List(5, 8)))))
+  println("flattened" + flatten(List(List(1, 1), 2, List(3, List(5, 8)))))
 
-  //p08
+  //p08 compress(List('a, 'a, 'a, 'a, 'b, 'c, 'c, 'a, 'a, 'd, 'e, 'e, 'e, 'e))
 
+  def compress[T](ls: List[T]): List[T] = {
+    ls match {
+      case Nil         => Nil
+      case head :: Nil => ls
+      case first :: second :: xs =>
+        if (first == second)
+          compress(second :: xs)
+        else
+          first :: compress(second :: xs)
+    }
+  }
 
+  println(
+    "compressed" + compress(
+      List('a, 'a, 'a, 'a, 'b, 'c, 'c, 'a, 'a, 'd, 'e, 'e, 'e, 'e)))
 
 }
