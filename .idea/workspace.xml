@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="610caf30-ad9d-40fa-a1ca-0991690cd680" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/Scala99Problems.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Scala99Problems.scala" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -17,8 +16,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/Scala99Problems.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="219">
-              <caret line="200" column="2" lean-forward="true" selection-start-line="200" selection-start-column="2" selection-end-line="200" selection-end-column="2" />
+            <state relative-caret-position="388">
+              <caret line="223" column="45" selection-start-line="223" selection-start-column="45" selection-end-line="223" selection-end-column="45" />
             </state>
           </provider>
         </entry>
@@ -66,7 +65,7 @@
   <component name="ProjectFrameBounds">
     <option name="y" value="23" />
     <option name="width" value="1440" />
-    <option name="height" value="823" />
+    <option name="height" value="822" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -159,7 +158,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547787839292" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547789055627" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="vcs.Subversion.Network" />
   </component>
@@ -302,7 +301,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="823" extended-state="6" />
+    <frame x="0" y="23" width="1440" height="822" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19027181" />
@@ -315,7 +314,7 @@
       <window_info id="Learn" order="7" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3269494" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32739726" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39906102" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -347,8 +346,8 @@
     <entry file="file://$PROJECT_DIR$/src/main/RunClasses.scala" />
     <entry file="file://$PROJECT_DIR$/src/main/Scala99Problems.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="219">
-          <caret line="200" column="2" lean-forward="true" selection-start-line="200" selection-start-column="2" selection-end-line="200" selection-end-column="2" />
+        <state relative-caret-position="388">
+          <caret line="223" column="45" selection-start-line="223" selection-start-column="45" selection-end-line="223" selection-end-column="45" />
         </state>
       </provider>
     </entry>
