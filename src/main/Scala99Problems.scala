@@ -182,4 +182,25 @@ object Scala99Problems {
   println("duplicate list" + duplicate(List(1, 2, 3)))
 
 
+  //p15  duplicateN(3, List('a, 'b, 'c, 'c, 'd))
+  //res0: List[Symbol] = List('a, 'a, 'a, 'b, 'b, 'b, 'c, 'c, 'c, 'c, 'c, 'c, 'd, 'd, 'd)
+
+  def duplicateN[T](n:Int,ls:List[T])={
+    ls.flatMap(a => (1 to n).map(_ => a))
+
+  }
+
+  println("duplicate listN" + duplicateN(3, List('a, 'b, 'c, 'c, 'd)))
+
+  //p16 drop(3, List('a, 'b, 'c, 'd, 'e, 'f, 'g, 'h, 'i, 'j, 'k))
+  //res0: List[Symbol] = List('a, 'b, 'd, 'e, 'g, 'h, 'j, 'k)
+
+  def drop[T](n:Int, ls:List[T]) ={
+    //failure cases like list blank etc are not written
+    ls.zipWithIndex filter { e => (e._2 + 1) % n != 0 } map { _._1 }
+    }
+
+
+  println("dropped"+ drop(5, List('a, 'b, 'c, 'd, 'e, 'f, 'g, 'h, 'i, 'j, 'k)))
 }
+
