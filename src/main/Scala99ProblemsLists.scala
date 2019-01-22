@@ -258,11 +258,25 @@ object Scala99ProblemsLists {
   //res0: List[Symbol] = List('a, 'new, 'b, 'c, 'd)
 
   def insertAt[T](value:T, n:Int, ls:List[T])= {
-    ls.splitAt(n-1)._1 ::: ( List(value):::ls.splitAt(n-1)._2 ) //simple solution
+    ls.splitAt(n-1)._1 ::: ( List(value):::ls.splitAt(n-1)._2 ) //simple basic solution
 
   }
 
   println("insertAt"+insertAt('new, 3, List('a, 'b, 'c, 'd)))
+
+//p22 range(4, 9)
+  //res0: List[Int] = List(4, 5, 6, 7, 8, 9)
+
+  def rangeAt(start:Int, end:Int):List[Int] = {
+    List.range(start,end)
+  }
+
+  println("range"+rangeAt(4,9))
+
+  //p23 Extract a given number of randomly selected elements from a list.
+ /* randomSelect(3, List('a, 'b, 'c, 'd, 'f, 'g, 'h))
+  res0: List[Symbol] = List('e, 'd, 'a)
+  */
 
 
 }
