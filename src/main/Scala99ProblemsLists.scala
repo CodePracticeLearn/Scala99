@@ -2,7 +2,7 @@ package main
 
 import scala.annotation.tailrec
 
-object Scala99Problems {
+object Scala99ProblemsLists {
 
   def main(args: Array[String]) = {
 
@@ -253,5 +253,16 @@ object Scala99Problems {
   }
 
   println("removedAt" + removeAt(1, List('a, 'b, 'c, 'd)))
+
+  //p21  insertAt('new, 2, List('a, 'b, 'c, 'd))
+  //res0: List[Symbol] = List('a, 'new, 'b, 'c, 'd)
+
+  def insertAt[T](value:T, n:Int, ls:List[T])= {
+    ls.splitAt(n-1)._1 ::: ( List(value):::ls.splitAt(n-1)._2 ) //simple solution
+
+  }
+
+  println("insertAt"+insertAt('new, 3, List('a, 'b, 'c, 'd)))
+
 
 }
