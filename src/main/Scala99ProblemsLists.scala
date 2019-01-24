@@ -293,4 +293,18 @@ def randomSelect[T](n:Int, ls:List[T]):List[T] = {
 
   println("lotto"+lotto(6, 49))
 
+  /*p25 Generate a random permutation of the elements of a list.
+  Hint: Use the solution of problem P23.*/
+
+  //p26 Generate the combinations of K distinct objects chosen from the N elements of a list.
+  // combinations(3, List('a, 'b, 'c, 'd, 'e, 'f)) =C(12,3) = 220 possiblities
+  //res0: List[List[Symbol]] = List(List('a, 'b, 'c), List('a, 'b, 'd), List('a, 'b, 'e), ...
+  //it is like permutatations and combinations example
+
+  def combinations[T](n:Int, ls:List[T]) ={
+
+    scala.util.Random.shuffle(List.range(0,49))
+  }
+
+
 }
