@@ -278,5 +278,19 @@ object Scala99ProblemsLists {
   res0: List[Symbol] = List('e, 'd, 'a)
   */
 
+def randomSelect[T](n:Int, ls:List[T]):List[T] = {
+  scala.util.Random.shuffle(ls).take(n)
+}
+
+  println("randomSelect"+randomSelect(3, List('a, 'b, 'c, 'd, 'f, 'g, 'h)))
+//p24 Draw N different random numbers from the set 1..M.
+  /*lotto(6, 49)
+  res0: List[Int] = List(23, 1, 17, 33, 21, 37)*/
+
+  def lotto(start:Int, end:Int):List[Int]={
+    scala.util.Random.shuffle(List.range(0,49)).take(start)
+  }
+
+  println("lotto"+lotto(6, 49))
 
 }
