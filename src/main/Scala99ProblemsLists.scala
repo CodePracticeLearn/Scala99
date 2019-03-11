@@ -2,7 +2,7 @@ package main
 
 import scala.annotation.tailrec
 
-object Scala99Problems {
+object Scala99ProblemsLists {
 
   def main(args: Array[String]) = {
 
@@ -253,5 +253,58 @@ object Scala99Problems {
   }
 
   println("removedAt" + removeAt(1, List('a, 'b, 'c, 'd)))
+
+  //p21  insertAt('new, 2, List('a, 'b, 'c, 'd))
+  //res0: List[Symbol] = List('a, 'new, 'b, 'c, 'd)
+
+  def insertAt[T](value:T, n:Int, ls:List[T])= {
+    ls.splitAt(n-1)._1 ::: ( List(value):::ls.splitAt(n-1)._2 ) //simple basic solution
+
+  }
+
+  println("insertAt"+insertAt('new, 3, List('a, 'b, 'c, 'd)))
+
+//p22 range(4, 9)
+  //res0: List[Int] = List(4, 5, 6, 7, 8, 9)
+
+  def rangeAt(start:Int, end:Int):List[Int] = {
+    List.range(start,end)
+  }
+
+  println("range"+rangeAt(4,9))
+
+  //p23 Extract a given number of randomly selected elements from a list.
+ /* randomSelect(3, List('a, 'b, 'c, 'd, 'f, 'g, 'h))
+  res0: List[Symbol] = List('e, 'd, 'a)
+  */
+
+def randomSelect[T](n:Int, ls:List[T]):List[T] = {
+  scala.util.Random.shuffle(ls).take(n)
+}
+
+  println("randomSelect"+randomSelect(3, List('a, 'b, 'c, 'd, 'f, 'g, 'h)))
+//p24 Draw N different random numbers from the set 1..M.
+  /*lotto(6, 49)
+  res0: List[Int] = List(23, 1, 17, 33, 21, 37)*/
+
+  def lotto(start:Int, end:Int):List[Int]={
+    scala.util.Random.shuffle(List.range(0,49)).take(start)
+  }
+
+  println("lotto"+lotto(6, 49))
+
+  /*p25 Generate a random permutation of the elements of a list.
+  Hint: Use the solution of problem P23.*/
+
+  //p26 Generate the combinations of K distinct objects chosen from the N elements of a list.
+  // combinations(3, List('a, 'b, 'c, 'd, 'e, 'f)) =C(12,3) = 220 possiblities
+  //res0: List[List[Symbol]] = List(List('a, 'b, 'c), List('a, 'b, 'd), List('a, 'b, 'e), ...
+  //it is like permutatations and combinations example
+
+  def combinations[T](n:Int, ls:List[T]) ={
+
+    scala.util.Random.shuffle(List.range(0,49))
+  }
+
 
 }
